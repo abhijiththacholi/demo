@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int size=5,i,j,k;
+    
+    for(i=0;i<size;i++){
+        for(j=0;j<size-i-1;j++){
+            cout<<" ";
+        }
+        int num=1;
+        for(k=0;k<2*i+1;k++){
+            if(i==0||i==size-1){
+                cout<<num++;
+            } else{
+                if(k==0||k==2*i){
+                    cout<<num++;
+                }else{
+                    cout<<" ";
+                }
+            }
+            
+        }
+        cout<<"\n";
+    }
+}

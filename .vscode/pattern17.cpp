@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int size=5,i,j,k;
+    int alpha =65;
+    int num=0;
+    for(i=0;i<size;i++){
+        for(j=0;j<=i;j++){
+            cout<<(char)(alpha+num++);
+        }
+        num=0;
+        cout<<"\n";
+        
+        
+
+    }
+    return 0;
+}
